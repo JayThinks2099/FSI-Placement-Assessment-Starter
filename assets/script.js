@@ -32,7 +32,10 @@ gbAdd.addEventListener('click', function(e) {
 })
 
 gbMinus.addEventListener('click', function(e) {
-    gb = gb - 1;
+    if (gb == 0) {
+        gb = 0
+    } else {
+    gb = gb - 1;}
     total = gb + cc + sugar;
     qtyGb.textContent = gb
     qtyTotal.textContent = total;
@@ -51,7 +54,10 @@ ccAdd.addEventListener('click', function(e) {
 })
 
 ccMinus.addEventListener('click', function(e) {
-    cc = cc - 1;
+    if (cc == 0) {
+        cc = 0
+    } else {
+    cc = cc - 1;}
     total = gb + cc + sugar;
     qtyCc.textContent = cc;
     qtyTotal.textContent = total;
@@ -69,7 +75,10 @@ sugarAdd.addEventListener('click', function(e) {
 })
 
 sugarMinus.addEventListener('click', function(e) {
-    sugar = sugar - 1;
+    if (sugar == 0) {
+        sugar = 0
+    } else {
+    sugar = sugar - 1;}
     total = gb + cc + sugar;
     qtySugar.textContent = sugar;
     qtyTotal.textContent = total;
